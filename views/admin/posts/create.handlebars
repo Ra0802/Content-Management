@@ -1,0 +1,40 @@
+<h1>Create Posts</h1>
+
+<form action = "/admin/posts/create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="title">File Upload</label>
+        <input type="text" style="background-color:transparent; color:white;" class="form-control" name="title" id="title" placeholder="Enter title">
+    </div>
+
+    <div class="form-group">
+        <label for="file">Title</label>
+        <input type="file" style="background-color:transparent; color:white;" class="form-control" name="file" id="title" placeholder="Enter title">
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="status">Status</label>
+        <select name="status" style="background-color:transparent; color:white;" id="status" class="form-control">
+            <option value="public" style="color: black;">Public</option>
+            <option value="private" style="color: black;">Private</option>
+            <option value="draft" style="color: black;">Draft</option>
+        </select>
+    </div>
+    <div class="form-check">
+        <label for="allowComments" class="form-check-label">
+        <input name="allowComments" type="checkbox" style="background-color:transparent; color:white;" class="form-check-input" id="allowComments">
+        Allow Comments
+    </label>
+    </div>
+
+    <div class="form-group">
+        <label for="body">Body</label>
+        <textarea name="body" cols="30" rows="10" class="form-control" style="background-color:transparent; color:white;" id="body" placeholder="Enter Description"></textarea>
+    </div>
+
+
+ 
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
